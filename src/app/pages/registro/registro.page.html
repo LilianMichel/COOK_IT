@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" >
+  <div class="login" >
+  <ion-card class="colorFondo">
+    <ion-card-header>
+      <div padding class="usuario1">
+        <img src="../../../assets/icon/newUser.png" style="align-items: center" style="height: 100px; width: 100px">
+      </div>
+
+    </ion-card-header>
+    <ion-card-content >
+      <ion-list no-line class="lista">
+        <ion-item color='#F3D9CB' >
+          <ion-label position="floating" >Nombre:</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+       <ion-item color='#F3D9CB'  >
+          <ion-label position="floating">Apellidos:</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item color='#F3D9CB'  >
+          <ion-label position="floating">Contraseña:</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item color='#F3D9CB'  >
+          <ion-label position="floating">Confirmar Contraseña:</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item color='#F3D9CB'  >
+          <ion-label position="floating">Correo:</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item color='#F3D9CB'>
+          <ion-label>Fecha nacimiento</ion-label>
+          <ion-datetime displayFormar="DD/MM/YYYY"></ion-datetime>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <div>
+      <ion-button expand="block" class="botonRegistrar" color='#8F3302' (click)="sesion()">Iniciar Sesión</ion-button>
+  </div>
+  <div>
+    <button ion-button block class="botonGoogle" color='#F3D9CB'>
+      <img src="../../../assets/icon/google.png"> 
+    </button>
+  </div>
+  </ion-card>
+</div>
+</ion-content>
