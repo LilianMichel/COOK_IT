@@ -1,17 +1,51 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+<ion-content style="--background:rgb(190, 220, 245) ;">
+  <ion-toolbar  style="--background:rgb(190, 220, 245) ;">
+    <ion-menu-toggle  slot="start">
+      <img class="img-h"  src="https://scontent.fgdl5-1.fna.fbcdn.net/v/t1.0-9/93122380_3470321129663916_8297215541232271360_n.jpg?_nc_cat=108&_nc_sid=174925&_nc_ohc=lbdUuBlab2cAX-BeXvU&_nc_ht=scontent.fgdl5-1.fna&oh=3865ce48d5bde9a991365931808b29d1&oe=5EE5D5E0" >  
+    </ion-menu-toggle>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon style="color:blanchedalmond; font-size: 30px;" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="text-align: center; color:rgb(99, 99, 99);">
+      ¡Hola Victor!<br>
+      Buen día
     </ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+  <ion-list class="contenedor-general">
+      <ion-item> 
+        <ion-avatar slot="start">
+          <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/08/17091340/iStock-465503660.jpg"/>
+      </ion-avatar>
+        <ion-label>Almendras</ion-label>
+        <ion-chip color="success" >
+          <ion-label>Buen estado</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item> 
+        <ion-avatar slot="start">
+          <img src="https://exoticfruitbox.com/wp-content/uploads/2016/05/avocado-933060_640.jpg"/>
+      </ion-avatar>
+        <ion-label>Aguacate</ion-label>
+        <ion-chip color="success" >
+          <ion-label>Buen estado</ion-label>
+        </ion-chip>
+      </ion-item>
+      
+      <ion-item> 
+        <ion-avatar slot="start">
+          <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/04/propiedades-y-beneficios-del-jitomate.jpg"/>
+      </ion-avatar>
+        <ion-label>Jitomate</ion-label>
+        <ion-chip color="warning" >
+          <ion-label>A punto de vencer</ion-label>
+        </ion-chip>
+      </ion-item>
+</ion-list>
+
 </ion-content>

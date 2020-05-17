@@ -1,0 +1,50 @@
+
+.card{
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+img{
+  border-radius: 20px;
+
+}
+
+.img-h{
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(190, 220, 245) ; 
+    border-radius: 0px 3px 80px 3px ;
+  }
+
+  h2{
+    left:100px;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    
+  }
+
+  .p-h{
+    font-size: 15px;
+    columns: #b4b3b3;
+    font-weight: 100;
+    letter-spacing: 0.4px; 
+    text-align: center;
+ 
+  }
+.add{
+  text-align: right;
+  color:#ffff;
+  font-size: 20px;
+}
+  

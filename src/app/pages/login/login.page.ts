@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
 
   principal(){
-    this.router.navigate(['/principal']);
+    this.router.navigate(['/tabs']);
   }
 
   registro(){
