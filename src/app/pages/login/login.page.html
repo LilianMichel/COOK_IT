@@ -1,29 +1,29 @@
-<ion-content class="background" >
-  <div class="login" >
-  <ion-card class="colorFondo">
-    <ion-card-header>
-      <div padding class="usuario1">
-        <img src="../../../assets/icon/iconLogin.png" style="align-items: center" style="height: 100px; width: 100px">
-      </div>
-    </ion-card-header>
-    <ion-card-content >
-      <ion-list no-line class="lista">
-        <ion-item color='#F3D9CB' >
-          <ion-label position="floating" >Nombre de usuario:</ion-label>
-          <ion-input  type="text"></ion-input>
-        </ion-item>
-       <ion-item color='#F3D9CB'  >
-          <ion-label position="floating">Contraseña:</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-list>
-    </ion-card-content>
-    <div>
-    <ion-button expand="block" class="botonIniciar" color='#57280E' (click)="principal()">Iniciar</ion-button>
-  </div>
-  <div>
-    <ion-button expand="block" class="botonRegistrar" color='#57280E' (click)="registro()">Registrar</ion-button>
-  </div>
-  </ion-card>
-</div>
+<ion-content class="background">
+    <div class="login">
+        <ion-card class="colorFondo">
+            <ion-card-header>
+                <div padding class="usuario1">
+                    <img src="../../../assets/icon/iconLogin.png" style="align-items: center" style="height: 100px; width: 150px">
+                </div>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list no-line class="lista">
+                    <ion-item color='#F8E473'>
+                        <ion-label position="floating">Nombre de usuario:</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
+                    <ion-item color='#F8E473'>
+                        <ion-label position="floating">Contraseña:</ion-label>
+                        <ion-input type="password"></ion-input>
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+            <div>
+                <ion-button expand="block" class="botonIniciar" color='#57280E' (click)="principal()">Iniciar</ion-button>
+            </div>
+            <div>
+                <ion-button expand="block" class="botonRegistrar" color='#57280E' (click)="registro()">Registrar</ion-button>
+            </div>
+        </ion-card>
+    </div>
 </ion-content>

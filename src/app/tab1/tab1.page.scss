@@ -1,58 +1,68 @@
-.flex-contenedor{
-  background-color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 33%;
-  text-align: center;
-  border-radius: 20px 20px 0px 0px;
-}
-.contenedor-general{
-  display: flex;
-  flex-direction: row;
-  background-color:white ;
-  border-radius: 20px 20px 0px 0px;
-  margin-top:10px;
+.flex-contenedor {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
 }
 
-img{
-  width: 100%;
-  border-radius: 10px;
+.contenedor-general {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 10px;
 }
 
-.img-h{
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-h {
     width: 70px;
     height: 70px;
-    border: 2px solid rgb(190, 220, 245) ; 
-    border-radius: 0px 3px 80px 3px ;
-  }
+    border: 2px solid rgb(190, 220, 245);
+    border-radius: 0px 3px 80px 3px;
+}
 
-  h2{
-    left:100px;
+h2 {
+    left: 100px;
     font-weight: 300;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
-    
-  }
+}
 
-  .p-h{
+.p-h {
     font-size: 15px;
     columns: #b4b3b3;
     font-weight: 100;
-    letter-spacing: 0.4px; 
+    letter-spacing: 0.4px;
     text-align: center;
- 
-  }
-.add{
-  text-align: right;
-  color:#ffff;
-  font-size: 20px;
 }
-  
-.redondo{
-  height: 30px;
-  background-color:#DAD705 ;
-  border-radius: 10px 10px 10px 10px;
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.add {
+    text-align: right;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.redondo {
+    height: 30px;
+    background-color: #DAD705;
+    border-radius: 10px 10px 10px 10px;
 }

@@ -1,53 +1,54 @@
-<ion-content style="--background:rgb(190, 220, 245) ;">
-  <ion-toolbar  style="--background:rgb(190, 220, 245) ;">
-    <ion-menu-toggle  slot="start">
-      <img class="img-h"  src="https://scontent.fgdl5-1.fna.fbcdn.net/v/t1.0-9/93122380_3470321129663916_8297215541232271360_n.jpg?_nc_cat=108&_nc_sid=174925&_nc_ohc=lbdUuBlab2cAX-BeXvU&_nc_ht=scontent.fgdl5-1.fna&oh=3865ce48d5bde9a991365931808b29d1&oe=5EE5D5E0" >  
-    </ion-menu-toggle>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon style="color:blanchedalmond; font-size: 30px;" name="add"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title style="text-align: center; color:rgb(99, 99, 99);">
-      ¡Hola Victor!<br>
-      Buen día
-    </ion-title>
-  </ion-toolbar>
+<ion-content style="--background:rgb(255, 87, 51) ;">
+    <ion-toolbar style="--background:rgb(255, 87, 51);">
+        <ion-menu-toggle slot="start">
+            <img class="img-h" src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t1.0-9/94640341_3502350066461022_2325312757391425536_o.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_eui2=AeGOegDRmpuq8bnd9JBO4c5d3ZmVvu4aHgbdmZW-7hoeBmvEHaLsIMew4qqLK90UrGcKtrdKzuoSqUQIDCBmc9b2&_nc_oc=AQlfg9ez0qsG9dY1csW-hO5Xt-HjI63dl2Xp0HAjXJpEqRsoXREHUdopDpyWgpKdebrtZxcjFJOm3H8rNayAvfEE&_nc_ht=scontent.ftpq1-1.fna&oh=24eb89417992726c00c51c0bee1110cb&oe=5EE8CB7D">
+        </ion-menu-toggle>
+        <ion-buttons slot="end">
+            <ion-button (click)="nuevoIngrediente()">
+                <ion-icon style="color:rgb(255, 255, 255); font-size: 30px;" name="add"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title style="text-align: center; color:rgb(255, 255, 255);">
+            <h1>¡Hola Victor!</h1>
+            <h6>Esto puedes preparar</h6>
+            <h6>con lo que tienes</h6>
+        </ion-title>
+    </ion-toolbar>
 
 
 
-  <ion-card class="card">
-      <img src="https://mfacdn.cachefly.net/chooseveg/sites/3/2019/03/Taco-de-papa-y-camote.jpg" />
-      <div class="texto-encima">Tacos</div>
-      <ion-card-content>
-        <section>
-          <ion-button color="success">Consultar</ion-button>
-          <ion-button color="warning">Cocinar</ion-button>
-        </section>
-      </ion-card-content>
-  </ion-card>
+    <ion-card class="card">
+        <img src="https://mfacdn.cachefly.net/chooseveg/sites/3/2019/03/Taco-de-papa-y-camote.jpg" />
+        <div class="texto-encima">Tacos</div>
+        <ion-card-content>
+            <section>
+                <ion-button color="success">Consultar</ion-button>
+                <ion-button color="warning">Cocinar</ion-button>
+            </section>
+        </ion-card-content>
+    </ion-card>
 
-  <ion-card class="card">
-    <img src="https://recetasveganas.net/wp-content/uploads/2016/08/perritocaliente-hotdog-vegano-3.jpg" />
-    <div class="texto-encima">Hod-Dog</div>
-    <ion-card-content>
-      <section>
-        <ion-button color="success">Consultar</ion-button>
-        <ion-button color="warning">Cocinar</ion-button>
-      </section>
-    </ion-card-content>
-</ion-card>
+    <ion-card class="card">
+        <img src="https://recetasveganas.net/wp-content/uploads/2016/08/perritocaliente-hotdog-vegano-3.jpg" />
+        <div class="texto-encima">Hod-Dog</div>
+        <ion-card-content>
+            <section>
+                <ion-button color="success">Consultar</ion-button>
+                <ion-button color="warning">Cocinar</ion-button>
+            </section>
+        </ion-card-content>
+    </ion-card>
 
-<ion-card class="card">
-  <img src="https://assets.afcdn.com/story/20160323/884528_w980h638c1cx511cy250.jpg" />
-  <div class="texto-encima">Sope</div>
-  <ion-card-content>
-    <section>
-      <ion-button color="success">Consultar</ion-button>
-      <ion-button color="warning">Cocinar</ion-button>
-    </section>
-  </ion-card-content>
-</ion-card>
+    <ion-card class="card">
+        <img src="https://assets.afcdn.com/story/20160323/884528_w980h638c1cx511cy250.jpg" />
+        <div class="texto-encima">Sope</div>
+        <ion-card-content>
+            <section>
+                <ion-button color="success">Consultar</ion-button>
+                <ion-button color="warning">Cocinar</ion-button>
+            </section>
+        </ion-card-content>
+    </ion-card>
 
- 
+
 </ion-content>

@@ -1,0 +1,78 @@
+<ion-content style="--background:rgb(255, 87, 51);">
+    <ion-toolbar style="--background:rgb(255, 87, 51);">
+        <ion-buttons slot="start" (click)="menu()">
+            <ion-button>
+                <ion-icon style="color:rgb(255, 255, 255); font-size: 30px;" name="chevron-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon style="color:rgb(255, 255, 255); font-size: 30px;" name="search-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title style="text-align: center; color:rgb(255, 255, 255);">
+            __________________
+        </ion-title>
+    </ion-toolbar>
+
+    <ion-list class="contenedor-general">
+        <ion-grid>
+            <ion-row center>
+                <ion-col (click)="listado()">
+                    <div>
+                        <img class=" img-h " src="https://image.flaticon.com/icons/svg/172/172625.svg ">
+                        <h6>Frutas</h6>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/svg/172/172567.svg">
+                        <h6>Verduras</h6>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/svg/172/172648.svg">
+                        <h6>Harinas</h6>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/png/512/172/172553.png">
+                        <h6>Panes</h6>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/png/512/172/172584.png">
+                        <h6>Mariscos</h6>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/png/512/172/172639.png">
+                        <h6>Res</h6>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/png/512/172/172590.png">
+                        <h6>Aves</h6>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <img class="img-h" src="https://image.flaticon.com/icons/png/512/172/172593.png">
+                        <h6>Congelados</h6>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-list>
+</ion-content>
