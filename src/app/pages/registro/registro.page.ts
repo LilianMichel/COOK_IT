@@ -14,7 +14,7 @@ export class RegistroPage implements OnInit {
   }
 
   sesion(){
-    this.router.navigate(['/principal']);
+    this.router.navigate(['/tabs']);
   }
 
 }

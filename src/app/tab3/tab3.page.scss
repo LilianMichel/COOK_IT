@@ -1,0 +1,51 @@
+.contenedor-general {
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    height: 700px;
+    margin-top: 10px;
+}
+
+.img-h {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(190, 220, 245);
+    border-radius: 0px 3px 80px 3px;
+}
+
+h2 {
+    left: 100px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.p-h {
+    font-size: 15px;
+    columns: #b4b3b3;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.add {
+    text-align: right;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.redondo {
+    height: 30px;
+    background-color: #DAD705;
+    border-radius: 10px 10px 10px 10px;
+}

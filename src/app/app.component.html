@@ -1,3 +1,52 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="main-menu" contentId="main-content">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="https://scontent.fgdl5-1.fna.fbcdn.net/v/t1.0-9/93122380_3470321129663916_8297215541232271360_n.jpg?_nc_cat=108&_nc_sid=174925&_nc_ohc=lbdUuBlab2cAX-19rAo&_nc_ht=scontent.fgdl5-1.fna&oh=492587734cd28221b2efdc56fdb069aa&oe=5EE5D5E0" alt="">
+        <ion-label>
+          <h2>Victor Castillo</h2>
+          <p>Vegano</p>
+        </ion-label>
+        </div>
+  
+  
+      <ion-list class="menu-items" lines="none">
+  
+       <ion-item (click)="tabs()" class="active">
+        <ion-icon name="home-outline"></ion-icon>Inicio
+       </ion-item> 
+  
+       <ion-item class="active">
+        <ion-icon name="tablet-portrait-outline"></ion-icon>Alacena
+      </ion-item> 
+  
+      <ion-item class="active">
+        <ion-icon name="stats-chart-outline"></ion-icon>Historial
+      </ion-item>
+  
+      <ion-item class="active">
+        <ion-icon name="pizza-outline"></ion-icon>suscripción
+      </ion-item>
+  
+      <ion-item class="active">
+        <ion-icon name="cog-outline"></ion-icon>configuración
+      </ion-item>
+  
+      <ion-item class="active">
+        <ion-icon name="information-circle-outline"></ion-icon>Asistencia
+      </ion-item>
+  
+      </ion-list>
+      <div class="menu-header-fg"></div>
+    </ion-content>
+  </ion-menu>
+  
+  <script>
+    async function openMenu() {
+      await menuController.open();
+    }
+  </script>
+
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

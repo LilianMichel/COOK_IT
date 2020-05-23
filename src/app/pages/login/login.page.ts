@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
+import { UsersService } from '../../services/users.service';
+import { Users } from '../../models/users';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -8,17 +13,64 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router) { }
+  myForm: FormGroup;
+  submitted = false;
+  users: Users[] = [];
+
+  constructor(private router: Router, private fb: FormBuilder, private service: UsersService, public alerta: AlertController) {
+    this.getUsers();
+  }
 
   ngOnInit() {
+    this.myForm = this.fb.group({
+      email: ['', Validators.compose([Validators.required,Validators.pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$')])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(8)])]
+      });
+  }
+
+  view(users) {
+    this.submitted = true;
+  }
+
+  getUsers() {
+    const snapshotChanges = this.service.getSnapshotChanges();
+    snapshotChanges.subscribe(resultQueryUsers => {
+      resultQueryUsers.forEach(data => {
+        this.users.push({
+          email: data.payload.doc.get('email'),
+          password: data.payload.doc.get('password')
+        });
+      });
+    });
+  }
+
+  userFound(email: string, password: string): {bol: boolean, usuario?: Users} {
+    for (const u of this.users) {
+      if (u.email === email && u.password === password) {
+        return {bol: true, usuario: u};
+      }
+    }
+    return { bol: false };
   }
 
   principal(){
-    this.router.navigate(['/principal']);
+    if (this.myForm.valid) {
+      const existeEmail = this.userFound(this.myForm.get('email').value.toString(),
+      this.myForm.get('password').value.toString());
+      if (existeEmail.bol) {
+        this.router.navigate(['tabs']);
+      } else {
+        window.confirm('Usuario y/o contraseña incorrecto/s, intentelo de nuevo...');
+      }
+    }
   }
 
   registro(){
     this.router.navigate(['/registro']);
   }
+
+
+
+
 
 }

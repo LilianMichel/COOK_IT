@@ -18,8 +18,19 @@ const routes: Routes = [
   {
     path: 'principal',
     loadChildren: () => import('./pages/principal/principal.module').then( m => m.PrincipalPageModule)
-  }
-
+  },
+  {
+    path: 'cat-ingredientes',
+    loadChildren: () => import('./pages/cat-ingredientes/cat-ingredientes.module').then( m => m.CatIngredientesPageModule)
+  },
+  {
+    path: 'ingrediente',
+    loadChildren: () => import('./pages/ingrediente/ingrediente.module').then( m => m.IngredientePageModule)
+  },
+  {
+    path: 'listado-ingredientes',
+    loadChildren: () => import('./pages/listado-ingredientes/listado-ingredientes.module').then( m => m.ListadoIngredientesPageModule)
+  },
 ];
 @NgModule({
   imports: [

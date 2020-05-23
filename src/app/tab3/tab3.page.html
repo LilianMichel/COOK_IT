@@ -1,17 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+<ion-content style="--background:rgb(255, 87, 51);">
+    <ion-toolbar style="--background:rgb(255, 87, 51) ;">
+        <ion-menu-toggle slot="start">
+            <img class="img-h" src="https://scontent.ftpq1-1.fna.fbcdn.net/v/t1.0-9/94640341_3502350066461022_2325312757391425536_o.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_eui2=AeGOegDRmpuq8bnd9JBO4c5d3ZmVvu4aHgbdmZW-7hoeBmvEHaLsIMew4qqLK90UrGcKtrdKzuoSqUQIDCBmc9b2&_nc_oc=AQlfg9ez0qsG9dY1csW-hO5Xt-HjI63dl2Xp0HAjXJpEqRsoXREHUdopDpyWgpKdebrtZxcjFJOm3H8rNayAvfEE&_nc_ht=scontent.ftpq1-1.fna&oh=24eb89417992726c00c51c0bee1110cb&oe=5EE8CB7D">
+        </ion-menu-toggle>
+        <ion-buttons slot="end">
+            <ion-button (click)="nuevoIngrediente()">
+                <ion-icon style="color:rgb(255, 255, 255); font-size: 30px;" name="add"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title style="text-align: center; color:rgb(255, 255, 255);">
+            <h1>¡Hola Victor!</h1>
+            <h6>Anexa algo a la </h6>
+            <h6>lista de compra</h6>
+        </ion-title>
     </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+
+    <ion-list class="contenedor-general">
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/08/17091340/iStock-465503660.jpg" />
+            </ion-avatar>
+            <ion-label>Almendras</ion-label>
+            <ion-chip color="success">
+                <ion-label>Buen estado</ion-label>
+            </ion-chip>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="https://exoticfruitbox.com/wp-content/uploads/2016/05/avocado-933060_640.jpg" />
+            </ion-avatar>
+            <ion-label>Aguacate</ion-label>
+            <ion-chip color="success">
+                <ion-label>Buen estado</ion-label>
+            </ion-chip>
+        </ion-item>
+
+        <ion-item>
+            <ion-avatar slot="start">
+                <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/04/propiedades-y-beneficios-del-jitomate.jpg" />
+            </ion-avatar>
+            <ion-label>Jitomate</ion-label>
+            <ion-chip color="warning">
+                <ion-label>A punto de vencer</ion-label>
+            </ion-chip>
+        </ion-item>
+    </ion-list>
+
 </ion-content>
