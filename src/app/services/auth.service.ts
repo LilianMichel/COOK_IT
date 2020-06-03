@@ -32,10 +32,11 @@ export class AuthService {
     }catch (error){
       console.log('error en Loggin', error);
     }
-  }*/
+
 
   loginGoogleUser(){
     return this.afsAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
 
-}
+}*/
+  }

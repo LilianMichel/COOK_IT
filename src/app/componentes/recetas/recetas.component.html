@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{titulo}}</ion-title>
+    <ion-button slot="end" fill="clear" (click)="close()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content> 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingredientes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     {{ingredientes}}
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Preparacion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     {{preparacion}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+   
+
+
+
+

@@ -1,26 +1,38 @@
-.flex-contenedor {
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 33%;
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
+.collection{ 
+        column-count:  3;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+        margin-top: 10px;
+}
+.collection-item{
+display: inline-block;
+padding: 3px 3px 5px 3px;
+margin-top: 10px;
+text-align: center;
+img{
+    border-radius: 8px;
+}
+}
+.collection-item:hover{
+    animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
 }
 
-.contenedor-general {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 20px 20px 0px 0px;
-    margin-top: 10px;
+
+@keyframes tapAnimation{
+    0%{
+        opacity: 1;
+        transform: scale(0.96);
+    }
+    100%{
+        opacity: 1;
+        background: rgb(0,0,0,0.05);
+        transform: scale(1);
+    }
 }
 
-img {
-    width: 100%;
-    border-radius: 10px;
-}
+
+
+//-------------------------------toolbar
 
 .img-h {
     width: 70px;
@@ -66,3 +78,5 @@ h6 {
     background-color: #DAD705;
     border-radius: 10px 10px 10px 10px;
 }
+
+//--------------------------Modals

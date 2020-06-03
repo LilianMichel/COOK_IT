@@ -42,14 +42,14 @@ export class RegistroPage implements OnInit {
       }
       this.registroService.createRegistro(this.registro);
     }
-
+/*
     Google(){
       this.authService.loginGoogleUser()
       .then((res)=>{
         this.onLoginRedirect();
       }).catch(err => console.log('err', err.message));
     }
-
+*/
     onLoginRedirect():void{
       this.router.navigate(['/login'])
     }
