@@ -16,37 +16,31 @@
     </ion-toolbar>
 
 
+        <ion-list class="contenedor-general">  
 
-    <ion-list class="contenedor-general">
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/08/17091340/iStock-465503660.jpg" />
-            </ion-avatar>
-            <ion-label>Almendras</ion-label>
-            <ion-chip color="success">
-                <ion-label>Buen estado</ion-label>
-            </ion-chip>
+          <form [formGroup]="myForm">
+            <ion-item style="margin:20px">
+              <ion-input  placeholder="Agregar" formControlName="producto"></ion-input>  
+                <ion-icon   slot="end"  [disabled]="!myForm.valid" (click)="saveCompra()" class="check" name="checkmark-outline"></ion-icon>
+            </ion-item>
+          </form>
+    
+
+      <div *ngFor="let compra of compras">
+      <ion-item-sliding (ionSwipe)="delete(compra.id)">
+        <ion-item (click)="selectCompra(compra)"> 
+          <ion-avatar slot="start">
+            <img src="https://static3.diariovasco.com/www/multimedia/201904/23/media/cortadas/alimentos-sanos-nevera-kzeB-U803588237AFG-624x385@Diario%20Vasco.jpg"/>
+        </ion-avatar>
+          <ion-label  >{{compra.producto}}</ion-label>
         </ion-item>
 
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://exoticfruitbox.com/wp-content/uploads/2016/05/avocado-933060_640.jpg" />
-            </ion-avatar>
-            <ion-label>Aguacate</ion-label>
-            <ion-chip color="success">
-                <ion-label>Buen estado</ion-label>
-            </ion-chip>
-        </ion-item>
+        <ion-item-options>
+        </ion-item-options>
 
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/04/propiedades-y-beneficios-del-jitomate.jpg" />
-            </ion-avatar>
-            <ion-label>Jitomate</ion-label>
-            <ion-chip color="warning">
-                <ion-label>A punto de vencer</ion-label>
-            </ion-chip>
-        </ion-item>
-    </ion-list>
-
+      </ion-item-sliding>
+      
+    </div>
+        </ion-list>
+                      
 </ion-content>

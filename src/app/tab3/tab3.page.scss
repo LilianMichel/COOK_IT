@@ -49,3 +49,22 @@ h6 {
     background-color: #DAD705;
     border-radius: 10px 10px 10px 10px;
 }
+.check {
+    color:#dad705; 
+    font-size: 30px;
+}.check:hover{
+    animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+}
+
+
+@keyframes tapAnimation{
+    0%{
+        opacity: 1;
+        transform: scale(0.96);
+    }
+    100%{
+        opacity: 1;
+        background: rgb(0,0,0,0.05);
+        transform: scale(1);
+    }
+}
